@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio - Pawan Kumavat</title>
+    <title>Personal Portfolio</title>
 
     <!-- bootstrap css cdn link  -->
     <link
@@ -30,9 +30,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
-
-    <!-- for adding animation to website we have use AOS library 
-    AOS Library css file cdn link -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- jquery cdn link  -->
@@ -45,7 +42,7 @@
       class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
     >
       <div class="container-fluid px-5">
-        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+        <a class="navbar-brand fw-bold fs-2 brand-color" href="#"
           >Portfolio</a
         >
         <button
@@ -81,7 +78,7 @@
             </li>
           </ul>
         </div>
-        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button>
+        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block"><a class="nav-link" href="#contact">Contact</a></button>
       </div>
     </nav>
     <!-- navbar ends here -->
@@ -98,9 +95,8 @@
             I am a recent graduate who has been practicing web development and IT support for one year. My expertise is in IT assistantship, and I have experience in the creation of completely responsive websites that include the backend.
           </p>
           <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-            Hire Me
+            <a class="nav-link" href="#contact">Hire Me</a>
           </button>
-          <a href="" class="link ms-4 d-none">See My Work</a>
         </div>
         <div class="col-10 col-md-4 d-none d-md-block">
           <img src="images/opyIMG_1379-removebg.PNG" class="img-fluid" alt="" />
@@ -110,7 +106,7 @@
     <!-- home section ends here -->
 
     <!-- expertise section starts -->
-    <section class="expertise mt-5" id="service">
+    <section class="expertise mx-5 mt-5" id="service">
       <div class="heading text-center">
         <small>My Expertise</small>
         <h3>
@@ -217,39 +213,47 @@
                   <span class="progress-value reactjs-progress">0%</span>
                 </div>
                 <br>
-                <span class="text">Angular</span>
+                <span class="text">ReactJS</span>
               </div>
             </div>
           </div>
         </div>
         <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
-          <div class="heading mt-5 mt-md-3">
-            <small>My Skills</small>
-            <h3>Beautiful & Unique Digital Experiences</h3>
-            
-            <div class="text-container">
-                <p class="text-muted" id="textContent">
-                    I am currently working as an IT intern at Swisscontact, where I am involved in the SCBD portal development, handling both front-end and backend tasks using HTML, PHP, and Laravel. I also manage IT vendor database updates.
-                    <br>
-                    Previously, I worked as a Junior Software Engineer at SoftLab IT.<br><br>
-                    My experience includes:<br>
-                    - Developing a React-based medicine delivery app (Get Well Soon).<br>
-                    - Creating a staff data web app using MySQL, Tailwind CSS, and AJAX.<br>
-                    - Designing and developing a camp management system (UI, frontend, documentation).<br>
-                    - Implementing responsive designs, navigation menus, and skeleton loaders in React, Angular, and Tailwind.<br>
-                    - Building a finance-related UI project inspired by LankaBangla Financial Portal.<br>
-                    I have a strong focus on front-end development, with additional experience in MongoDB and MySQL for backend work.
-                </p>
+            <div class="heading mt-5 mt-md-3">
+                <small class="text-gray-500 text-sm">My Skills</small>
+                <h3 class="text-2xl md:text-3xl font-semibold text-gray-800">Beautiful & Unique Digital Experiences</h3>
+                
+                <div class="text-container mt-6">
+                    <p id="textContent" class="text-gray-600 text-sm md:text-base leading-relaxed">
+                      <ul class="list-disc list-inside space-y-2 mt-4 text-gray-600">
+                        "I am currently serving as an IT Intern at Swisscontact, where I contribute to the development of the SCBD portal. My responsibilities include both front-end and back-end development, utilizing technologies such as HTML, PHP, and Laravel. Additionally, I am involved in the management and updating of the IT vendor database.
+                        <br>
+
+                        Prior to this role, I held the position of Junior Software Engineer at SoftLab IT, where I gained valuable experience in software development and technical project execution.
+                    </ul>
+                        My experience includes:
+                        <ul class="list-disc list-inside space-y-2 mt-4 text-gray-600">
+                            <li>Developing a <span class="font-semibold text-blue-600">React-based medicine delivery app</span> (Get Well Soon).</li>
+                            <li>Creating a <span class="font-semibold text-blue-600">staff data web app</span> using MySQL, Tailwind CSS, and AJAX.</li>
+                            <li>Designing and developing a <span class="font-semibold text-blue-600">camp management system</span> (UI, frontend, documentation).</li>
+                            <li>Implementing <span class="font-semibold text-blue-600">responsive designs</span>, navigation menus, and skeleton loaders in React, Angular, and Tailwind.</li>
+                            <li>Building a <span class="font-semibold text-blue-600">finance-related UI project</span> inspired by LankaBangla Financial Portal.</li>
+                        </ul>
+                        <br>
+                        I have a strong focus on <span class="font-semibold text-blue-600">front-end development</span>, with additional experience in <span class="font-semibold text-blue-600">MongoDB and MySQL</span> for backend work.
+                    </p>
+                </div>
+                
+                <div class="bt mt-6 flex justify-between">
+                    <button id="seeMoreBtn" class="see-more-btn">See More</button>
+                
+                    <button class="c-btn">
+                        <a href="Cv- December-2024.pdf" download="SampleCV" class="text-white no-underline">Download CV</a>
+                    </button>
+                </div>
             </div>
-        
-            <button class="see-more-btn" id="seeMoreBtn">See More</button>
-        
-            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-                <a href="Cv-December-2024.pdf" download="SampleCV" style="text-decoration: none; color: #fff;">Download CV</a>
-            </button>
         </div>
-        
-        </div>
+
       </div>
     </section>
     <section class="portfolio" id="portfolio">
@@ -274,8 +278,8 @@
               <div class="card-body text-center">
                 <h4 class="card-title">Chess Game</h4>
                 <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                <span class="badge bg-secondary badge-pill mb-2">Game</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span>
                 ><br />
                 <a href="https://github.com/abdunnoorshihab/Chess-Game" class="link">Read More</a>
               </div>
@@ -351,7 +355,7 @@
                 <h4 class="card-title">Unclickable Button</h4>
                 <span class="badge bg-secondary badge-pill">HTML&CSS</span>
                 <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">Web App</span
+                <span class="badge bg-secondary badge-pill mb-2">Web App</span>
                 ><br />
                 <a href="https://github.com/abdunnoorshihab/Unclickable-Button-project" class="read-more-btn link">Read More</a>
               </div>
@@ -383,12 +387,10 @@
                     </div>
                     <div class="col-10">
                       <p class="text-muted">
-                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
-                        consecteaur aeci velit, sed quia non numquam eius modi
-                        tempora incidunt ut lao magnam aliquam quaerat ...
+                        Always satisfied from Esquire purchases, they never disappoint me. And sharp rice cooker is one of best purchase from their online portal.
                       </p>
-                      <h4>Kevin Andrew</h4>
-                      <small class="fs-6 text-muted">CEO of Company</small>
+                      <h4>Talamoon Nisha</h4>
+                      <small class="fs-6 text-muted">Happy Client</small>
                     </div>
                   </div>
                 </div>
@@ -399,12 +401,10 @@
                     </div>
                     <div class="col-10">
                       <p class="text-muted">
-                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
-                        consecteaur aeci velit, sed quia non numquam eius modi
-                        tempora incidunt ut lao magnam aliquam quaerat ...
+                        The product is authentic, delivered in 4 days. I downloaded the warranty from the Esquire website. The seller was very helpful and cooperative. I've used the machine twice till now. Functioning very nicely. 👍 for the seller.
                       </p>
-                      <h4>Kevin Andrew</h4>
-                      <small class="fs-6 text-muted">CEO of Company</small>
+                      <h4>Khudista Mahjabeen</h4>
+                      <small class="fs-6 text-muted">Customer</small>
                     </div>
                   </div>
                 </div>
@@ -415,12 +415,10 @@
                     </div>
                     <div class="col-10">
                       <p class="text-muted">
-                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
-                        consecteaur aeci velit, sed quia non numquam eius modi
-                        tempora incidunt ut lao magnam aliquam quaerat ...
+                        Heriken is cool! I have ordered hundreds of products from it and never got any scam.
                       </p>
-                      <h4>Kevin Andrew</h4>
-                      <small class="fs-6 text-muted">CEO of Company</small>
+                      <h4>Iliyas</h4>
+                      <small class="fs-6 text-muted">User</small>
                     </div>
                   </div>
                 </div>
@@ -454,386 +452,93 @@
     <section class="blog mt-5 pb-5" id="blog">
       <div class="heading text-center pt-5">
         <small>Latest News</small>
-        <h3>Blog & Articles</h3>
+        <h3>Volunteering & Certification</h3>
       </div>
-      <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+      <div class="row justify-content-evenly px-4 mt-4 align-items-stretch" data-aos="fade-up">
         <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
-          <div class="card">
-            <img
-              src="images/2048game.png"
-              class="card-img-top rounded-4"
-              alt="..."
-            />
-            <div class="card-body px-4">
-              <small>By Pawan Kumavat</small
-              ><span class="ms-3">Mar 8,2022</span>
-              <h4 class="card-title">
-                <a href="">Quis autem vea eum iure reprehenderit</a>
-              </h4>
-              <p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum nece aibus minima veniam.
-              </p>
-              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read More</a>
+            <div class="card h-100 d-flex flex-column">
+                <img src="images/huawei.jpg" class="card-img-top rounded-4" alt="..." style="object-fit: cover; height: 200px;">
+                <div class="card-body px-4 d-flex flex-column">
+                    <small>By HUAWEI</small><span class="ms-3">Feb 8, 2022</span>
+                    <h4 class="card-title">
+                        <a href="https://www.linkedin.com/posts/abdun-noor-shihab_activity-6876089483918495744-N9uM?utm_source=share&utm_medium=member_desktop&rcm=ACoAACwSraQBKdU56ntJ4_0ifbT67s1FsD7-mAg">The Future of Mobile App Industry</a>
+                    </h4>
+                    <p class="text-muted flex-grow-1">
+                        I have finished Huawei's training session on the future of the mobile app industry...
+                    </p>
+                    <a href="https://www.linkedin.com/posts/abdun-noor-shihab_activity-6876089483918495744-N9uM?utm_source=share&utm_medium=member_desktop&rcm=ACoAACwSraQBKdU56ntJ4_0ifbT67s1FsD7-mAg" class="mt-auto">Read More</a>
+                </div>
             </div>
-          </div>
         </div>
         <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
-          <div class="card">
-            <img
-              src="images/currency-converter.png"
-              class="card-img-top rounded-4"
-              alt="..."
-            />
-            <div class="card-body px-4">
-              <small>By Pawan Kumavat</small
-              ><span class="ms-3">Mar 8,2022</span>
-              <h4 class="card-title">
-                <a href="">Quis autem vea eum iure reprehenderit</a>
-              </h4>
-              <p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum nece aibus minima veniam.
-              </p>
-              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Read More</a>
+            <div class="card h-100 d-flex flex-column">
+                <img src="images/iub.jpg" class="card-img-top rounded-4" alt="..." style="object-fit: cover; height: 200px;">
+                <div class="card-body px-4 d-flex flex-column">
+                    <small>By IUB</small><span class="ms-3">Mar 8, 2023</span>
+                    <h4 class="card-title">
+                        <a href="https://www.linkedin.com/posts/abdun-noor-shihab_i-successfully-contributed-as-a-volunteer-activity-7253651554832916480-oD4K">Volunteering at 24th convocation</a>
+                    </h4>
+                    <p class="text-muted flex-grow-1">
+                        I successfully completed my volunteering duties for the 24th convocation...
+                    </p>
+                    <a href="https://www.linkedin.com/posts/abdun-noor-shihab_i-successfully-contributed-as-a-volunteer-activity-7253651554832916480-oD4K" class="mt-auto">Read More</a>
+                </div>
             </div>
-          </div>
         </div>
         <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
-          <div class="card">
-            <img
-              src="images/dictionary.png"
-              class="card-img-top rounded-4"
-              alt="..."
-            />
-            <div class="card-body px-4">
-              <small>By Pawan Kumavat</small
-              ><span class="ms-3">Mar 8,2022</span>
-              <h4 class="card-title">
-                <a href="">Quis autem vea eum iure reprehenderit</a>
-              </h4>
-              <p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum nece aibus minima veniam.
-              </p>
-              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read More</a>
+            <div class="card h-100 d-flex flex-column">
+                <img src="images/udemi.jpg" class="card-img-top rounded-4" alt="..." style="object-fit: cover; height: 200px;">
+                <div class="card-body px-4 d-flex flex-column">
+                    <small>By Udemy</small><span class="ms-3">Dec 8, 2021</span>
+                    <h4 class="card-title">
+                        <a href="https://www.linkedin.com/posts/abdun-noor-shihab_udemycourse-activity-6692161256645890048-sE9m">Web Design and Development</a>
+                    </h4>
+                    <p class="text-muted flex-grow-1">
+                        During Corona, I successfully completed web development courses on Udemy...
+                    </p>
+                    <a href="https://www.linkedin.com/posts/abdun-noor-shihab_udemycourse-activity-6692161256645890048-sE9m" class="mt-auto">Read More</a>
+                </div>
             </div>
-          </div>
         </div>
-        <!-- here we will make modals if Read more link is clicked the modal will popup -->
-        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              
-                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
-              
-              <div class="modal-body px-4">
-                <div class="img">
-                  <img src="images/2048game.png" class="img-fluid" alt="">
-                </div>
-                <div class="content mt-3">
-                  <small>By Pawan Kumavat</small
-                    ><span class="text-muted ms-2">Mar 8,2022</span>
-                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
-                  <div class="social-links mt-4">
-                      <button href="" class="rounded-pill dribble">
-                        <i class="bi bi-dribbble"></i>
-                      </button>
-                      <button href="" class="rounded-pill whatsapp">
-                        <i class="bi bi-whatsapp"></i>
-                      </button>
-                      <button href="" class="rounded-pill behance">
-                        <i class="bi bi-behance"></i>
-                      </button>
-                  </div>
-                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
-                </div>
-              </div>
-              <div class="heading px-2">
-                <h3 class="fs-3 ms-3">Leave A Comment</h3>
-              </div>
-              <div class="contact-form ms-3 mt-3 pb-4 px-2">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="E-mail"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Mobile No."
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    placeholder="Message"
-                    rows="5"
-                  ></textarea>
-                </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
-                </button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              
-                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
-              
-              <div class="modal-body px-4">
-                <div class="img">
-                  <img src="images/currency-converter.png" class="img-fluid" alt="">
-                </div>
-                <div class="content mt-3">
-                  <small>By Pawan Kumavat</small
-                    ><span class="text-muted ms-2 ms-md-0">Mar 8,2022</span>
-                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
-                  <div class="social-links mt-4">
-                      <button href="" class="rounded-pill dribble">
-                        <i class="bi bi-dribbble"></i>
-                      </button>
-                      <button href="" class="rounded-pill whatsapp">
-                        <i class="bi bi-whatsapp"></i>
-                      </button>
-                      <button href="" class="rounded-pill behance">
-                        <i class="bi bi-behance"></i>
-                      </button>
-                  </div>
-                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
-                </div>
-              </div>
-              <div class="heading px-2">
-                <h3 class="fs-3 ms-3">Leave A Comment</h3>
-              </div>
-              <div class="contact-form ms-3 mt-3 pb-4 px-2">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="E-mail"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Mobile No."
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    placeholder="Message"
-                    rows="5"
-                  ></textarea>
-                </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
-                </button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              
-                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
-              
-              <div class="modal-body px-4">
-                <div class="img">
-                  <img src="images/dictionary.png" class="img-fluid" alt="">
-                </div>
-                <div class="content mt-3">
-                  <small>By Pawan Kumavat</small
-                    ><span class="text-muted ms-2 ms-md-0">Mar 8,2022</span>
-                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
-                  <div class="social-links mt-4">
-                      <button href="" class="rounded-pill dribble">
-                        <i class="bi bi-dribbble"></i>
-                      </button>
-                      <button href="" class="rounded-pill whatsapp">
-                        <i class="bi bi-whatsapp"></i>
-                      </button>
-                      <button href="" class="rounded-pill behance">
-                        <i class="bi bi-behance"></i>
-                      </button>
-                  </div>
-                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
-                </div>
-              </div>
-              <div class="heading px-2">
-                <h3 class="fs-3 ms-3">Leave A Comment</h3>
-              </div>
-              <div class="contact-form ms-3 mt-3 pb-4 px-2">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="E-mail"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Mobile No."
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    placeholder="Message"
-                    rows="5"
-                  ></textarea>
-                </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
-                </button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
+    
     </section>
     <!-- blog section ends here -->
 
     <!-- contact section starts -->
-    <section class="contact py-5" id="contact">
-      <div class="heading text-center">
-        <small>Get in Touch</small>
-        <h3>Any Questions? Feel Free to Contact</h3>
+    <section class="contact" id="contact">
+      <div class="container">
+          <small>Get in Touch</small>
+          <h3>Any Questions? Feel Free to Contact</h3>
+  
+          <div class="contact-content">
+              <!-- Contact Details -->
+              <div class="contact-box">
+                  <div class="contact-item">
+                      <i class="bi bi-geo-alt-fill"></i>
+                      <p>272/4, Swapnonir, South Manikdi, Dhaka 1206</p>
+                  </div>
+                  <div class="contact-item">
+                      <i class="bi bi-telephone-fill"></i>
+                      <p>+880 1831005011</p>
+                  </div>
+                  <div class="contact-item">
+                      <i class="bi bi-envelope-fill"></i>
+                      <p>abdunnoorshihab@gmail.com</p>
+                  </div>
+              </div>
+  
+              <!-- Social Media Icons -->
+              <div class="social-icons">
+                  <a href="https://www.facebook.com/abdunnoorshihab/" class="facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.linkedin.com/in/abdun-noor-shihab/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://wa.me/+8801831005011" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+                  <a href="https://www.instagram.com/noor._.shihab/" class="instagram"><i class="bi bi-instagram"></i></a>
+              </div>
+          </div>
       </div>
-      <div class="row justify-content-evenly mt-5">
-        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-geo-alt-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>121 King Street Melbourne, 3000, Australia</p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-telephone-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>+91 9527818693</p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-send-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>codewithpawan@gmail.com</p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-globe-americas"></i>
-            </div>
-            <div class="col-11">
-              <p>codingpawan.com</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
-          <div class="contact-form">
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Name"
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="E-mail"
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Mobile No."
-              />
-            </div>
-            <div class="mb-3">
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                placeholder="Message"
-                rows="5"
-              ></textarea>
-            </div>
-            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-              Submit
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- contact section ends here -->
-
-      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
-    <button
-      type="button"
-      class="btn btn-floating btn-lg rounded-pill"
-      id="btn-back-to-top"
-    >
-      <i class="bi bi-arrow-up"></i>
-    </button>
-
+  </section>
+  
     <!-- footer section starts  -->
     <footer class="text-center text-muted py-4">
       <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
@@ -850,20 +555,9 @@
         <div class="vr"></div>
         <a href="#contact">Contact</a>
       </div>
-      <div class="social-links mt-5" data-aos="fade-up">
-        <button href="" class="rounded-pill dribble">
-          <i class="bi bi-dribbble"></i>
-        </button>
-        <button href="" class="rounded-pill whatsapp">
-          <i class="bi bi-whatsapp"></i>
-        </button>
-        <button href="" class="rounded-pill behance">
-          <i class="bi bi-behance"></i>
-        </button>
-      </div>
       <hr class="text-muted my-4" />
 
-      <p>Copyright 2022 Portfolio | All Rights Reserved.</p>
+      <p>Copyright 2025 Abdun Noor Shihab | All Rights Reserved.</p>
     </footer>
     <!-- footer section ends here -->
 

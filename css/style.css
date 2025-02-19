@@ -1,3 +1,10 @@
+/* Apply fixed margin and padding for all items */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* appling google font over the website  */
 body{
     font-family: 'Josefin Sans', sans-serif;
@@ -97,52 +104,39 @@ body{
     animation: floatimg 4s ease-in-out infinite;
 }
 
-            .text-container {
-                position: relative;
-                max-height: 200px;
-                overflow: hidden;
-                transition: max-height 0.5s ease-in-out;
-            }
-        
-            .text-container::after {
-                content: "";
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                height: 100px;
-                background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.806));
-                transition: opacity 0.3s ease-in-out;
-            }
-        
-            .text-container.expanded {
-                max-height: none;
-            }
-        
-            .text-container.expanded::after {
-                opacity: 0;
-            }
-        
-            .see-more-btn {
-                background: rgba(207, 207, 207, 0.381);
-                border: 1px solid blue;
-                border-radius: 10px;
-                color: #007bff;
-                cursor: pointer;
-                font-size: 16px;
-                padding: 5px;
-                display: flex;
-                justify-content: center;   
-                margin-top: 5px;
-            }
+.text-container {
+    position: relative;
+    max-height: 200px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
 
-            .card-img-top {
-                width: 100%; /* Ensures the image fills the card width */
-                height: 200px; /* Set a fixed height for all images */
-                object-fit: cover; /* Ensures images maintain aspect ratio and fill the space */
-              }
-              
-      
+.text-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.806));
+    transition: opacity 0.3s ease-in-out;
+}
+
+.text-container.expanded {
+    max-height: none;
+}
+
+.text-container.expanded::after {
+    opacity: 0;
+}
+
+.card-img-top {
+    width: 100%; /* Ensures the image fills the card width */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures images maintain aspect ratio and fill the space */
+}
+
+/* Styling for the "See More" button */
 
 @keyframes floatimg {
     0%{
@@ -157,32 +151,71 @@ body{
 }
 
 /* expertise section starts */
-.heading small{
-    color: #6f34fe;
-    font-size: 1.5rem;
+/* Styling the heading section */
+.heading small {
+    font-size: 0.875rem; /* Small font size for subheading */
+    color: #6B7280; /* Light gray color */
+}
+
+.heading h3 {
+    font-size: 1.75rem; /* Larger text size for main heading */
+    font-weight: 600; /* Semi-bold font for better readability */
+    color: #1F2937; /* Dark gray color */
+}
+
+/* Text container styling */
+.text-container p {
+    color: #4B5563; /* Medium gray for the paragraph */
+    font-size: 0.875rem; /* Small font size for paragraph */
+    line-height: 1.75rem; /* Better line spacing for readability */
+}
+
+.text-container ul {
+    margin-left: 1.5rem;
+}
+
+.text-container .font-semibold {
+    color: #3B82F6; /* Highlighted text with a blue color */
+}
+
+/* Styling for buttons */
+.bt button {
+    padding: 12px 24px;
+    border-radius: 9999px; /* Pill-shaped button */
+    font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
-.heading h3{
-    margin-top: 0.5rem;
-    color: #3f396d;
-    font-size: 2.5rem;
-    font-weight: 700;
+
+.bt .see-more-btn {
+    background: transparent; /* Gradient from blue to purple */
+    color: black;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-bottom: 100px;
 }
-.expertise h4{
-    color: #3f396d;
-    font-weight: 700;
+
+.bt .c-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 500px;
+    background: linear-gradient(to right, #fca61f, #feb53e); 
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
-.expertise a{
+
+/* Hover effects */
+.bt button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
+.bt button a {
     text-decoration: none;
-    color: #fca61f;
-}
-.expertise a:hover{
-    color: #6f34fe;
-}
-.expertise .service-card{
-    text-align: center;
-    padding: 15px 15px;
-    border-radius: 0.7rem;
+    color: inherit; /* Inherit button text color */
 }
 
 /* skill section starts */
@@ -350,10 +383,7 @@ body{
     font-size: 1rem;
     color: #6f34fe;
 }
-/* contact section starts */
-.contact{
-    background-color: #f3f3f3;
-}
+
 .contact-details i{
     font-size: 1.5rem;
     color: #fca61f;
@@ -362,15 +392,89 @@ body{
     font-size: 1.2rem;
     margin-left: 1rem;
 }
-.contact-form .form-control:focus{
-    box-shadow: none;
-    border: 1px solid #fca61f;
-}
-.contact-form .form-control{
-    padding: 10px 10px;
-    width: 80%;
+
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background: transparent;
 }
 
+.container {
+    margin: 0 auto;
+}
+
+small {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #222;
+    margin-top: 5px;
+}
+
+/* Contact Content */
+.contact-content {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Contact Box */
+.contact-box {
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    font-size: 20px;
+    color: #007bff;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.facebook { background: #3b5998; }
+.linkedin { background: #0077b5; }
+.whatsapp { background: #25d366; }
+.instagram { background: #e4405f; }
 /* footer section starts */
 footer{
     background-color: #211e39;

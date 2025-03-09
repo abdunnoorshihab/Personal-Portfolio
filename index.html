@@ -13,6 +13,8 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
 
     <!-- custom css file -->
     <link rel="stylesheet" href="css/style.css" />
@@ -78,7 +80,7 @@
             </li>
           </ul>
         </div>
-        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block"><a class="nav-link" href="#contact">Contact</a></button>
+        <a class="nav-link" href="#contact"><button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button></a>
       </div>
     </nav>
     <!-- navbar ends here -->
@@ -99,7 +101,7 @@
           </button>
         </div>
         <div class="col-10 col-md-4 d-none d-md-block">
-          <img src="images/opyIMG_1379-removebg.PNG" class="img-fluid" alt="" />
+          <img src="images/opyIMG_1379-removebg.PNG" class="img-fluid" alt="Placeholder Image" />
         </div>
       </div>
     </section>
@@ -127,7 +129,7 @@
             <div class="content mt-3">
               <h4>Web Development</h4>
               <p class="text-muted">
-                I've been doing web design for eight months. I have helped with the front-end development of a few projects that are currently accessible on the local website. For example, <a href="https://www.heriken.com/">Hariken</a>, <a href="https://ordhekdeen.com/">Ordekdeen</a>
+                I've been doing web design for eight months. I have helped with the front-end development of a few projects that are currently accessible on the local website. For example, I have worked on projects like <a href="https://www.heriken.com/">Hariken</a> and <a href="https://ordhekdeen.com/">Ordekdeen</a>.
               </p>
              
             </div>
@@ -226,7 +228,7 @@
                 <div class="text-container mt-6">
                     <p id="textContent" class="text-gray-600 text-sm md:text-base leading-relaxed">
                       <ul class="list-disc list-inside space-y-2 mt-4 text-gray-600">
-                        "I am currently serving as an IT Intern at Swisscontact, where I contribute to the development of the SCBD portal. My responsibilities include both front-end and back-end development, utilizing technologies such as HTML, PHP, and Laravel. Additionally, I am involved in the management and updating of the IT vendor database.
+                        <li>I am currently serving as an IT Intern at Swisscontact, where I contribute to the development of the SCBD portal. My responsibilities include both front-end and back-end development, utilizing technologies such as HTML, PHP, and Laravel. Additionally, I am involved in the management and updating of the IT vendor database.</li>
                         <br>
 
                         Prior to this role, I held the position of Junior Software Engineer at SoftLab IT, where I gained valuable experience in software development and technical project execution.
@@ -244,11 +246,14 @@
                     </p>
                 </div>
                 
-                <div class="bt mt-6 flex justify-between">
-                    <button id="seeMoreBtn" class="see-more-btn">See More</button>
+                <div class="bt mt-6">
+                  <button id="seeMoreBtn" class="text-black 
+                  font-semibold shadow-md hover:bg-blue-600 transition duration-300 flex justify-center items-center w-full">
+                  See More
+                   </button>
                 
-                    <button class="c-btn">
-                        <a href="Cv- December-2024.pdf" download="SampleCV" class="text-white no-underline">Download CV</a>
+                    <button class="c-btn mt-3 py-2 px-4 rounded-pill">
+                        <a href="Cv- December-2024.pdf" download="Cv-December-2024" class="text-white no-underline">Download CV</a>
                     </button>
                 </div>
             </div>
@@ -278,7 +283,7 @@
               <div class="card-body text-center">
                 <h4 class="card-title">Chess Game</h4>
                 <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill mb-2">Game</span>
+                <span class="bg-secondary badge-pill mb-2">Game</span>
                 <span class="badge bg-secondary badge-pill mb-2">Game</span>
                 ><br />
                 <a href="https://github.com/abdunnoorshihab/Chess-Game" class="link">Read More</a>
@@ -296,7 +301,7 @@
               <div class="card-body text-center">
                 <h4 class="card-title">Bangladesh railway Reservation System</h4>
                 <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="bg-secondary badge-pill">JavaScript</span>
                 <span class="badge bg-secondary badge-pill mb-2">Website</span
                 ><br />
                 <a href="https://github.com/abdunnoorshihab/Bangladesh-Railway-Reservation-System" class="read-more-btn link">Read More</a>
@@ -366,84 +371,84 @@
     </section>
     <section class="testimonial mt-5 pt-5" id="testimonial">
       <div class="row justify-content-evenly">
-        <div class="col-md-4 col-10" data-aos="slide-right">
-          <img src="images/tastimonials-img.png" class="img-fluid" alt="" />
-        </div>
-        <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
-          <div class="heading">
-            <small>Testimonials</small>
-            <h3>Happy Clients Feedback</h3>
-            <!-- here we will use carousel element from bootstrap -->
-            <div
-              id="carouselExampleControls"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row justify-content-evenly">
-                    <div class="col-2 text-center">
-                      <i class="bi bi-quote"></i>
-                    </div>
-                    <div class="col-10">
-                      <p class="text-muted">
-                        Always satisfied from Esquire purchases, they never disappoint me. And sharp rice cooker is one of best purchase from their online portal.
-                      </p>
-                      <h4>Talamoon Nisha</h4>
-                      <small class="fs-6 text-muted">Happy Client</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row justify-content-evenly">
-                    <div class="col-2 text-center">
-                      <i class="bi bi-quote"></i>
-                    </div>
-                    <div class="col-10">
-                      <p class="text-muted">
-                        The product is authentic, delivered in 4 days. I downloaded the warranty from the Esquire website. The seller was very helpful and cooperative. I've used the machine twice till now. Functioning very nicely. 👍 for the seller.
-                      </p>
-                      <h4>Khudista Mahjabeen</h4>
-                      <small class="fs-6 text-muted">Customer</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row justify-content-evenly">
-                    <div class="col-2 text-center">
-                      <i class="bi bi-quote"></i>
-                    </div>
-                    <div class="col-10">
-                      <p class="text-muted">
-                        Heriken is cool! I have ordered hundreds of products from it and never got any scam.
-                      </p>
-                      <h4>Iliyas</h4>
-                      <small class="fs-6 text-muted">User</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button
-                class="nextprev-btn rounded-pill prev-btn"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev"
-              >
-                <i class="bi bi-arrow-left-circle-fill prev"></i>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="nextprev-btn rounded-pill next-btn"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="next"
-              >
-                <i class="bi bi-arrow-right-circle-fill next"></i>
-                <span class="visually-hidden">Next</span>
-              </button>
+      <div class="col-md-4 col-10" data-aos="slide-right">
+        <img src="images/tastimonials-img.png" class="img-fluid" alt="" />
+      </div>
+      <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
+        <div class="heading">
+        <small>Testimonials</small>
+        <h3>Happy Clients Feedback</h3>
+        <!-- here we will use carousel element from bootstrap -->
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row justify-content-evenly">
+            <div class="col-2 text-center">
+              <i class="bi bi-quote"></i>
+            </div>
+            <div class="col-10">
+              <p class="text-muted">
+              Always satisfied from Esquire purchases, they never disappoint me. And sharp rice cooker is one of best purchase from their online portal.
+              </p>
+              <h4>Talamoon Nisha</h4>
+              <small class="fs-6 text-muted">Happy Client</small>
+            </div>
             </div>
           </div>
+          <div class="carousel-item">
+            <div class="row justify-content-evenly">
+            <div class="col-2 text-center">
+              <i class="bi bi-quote"></i>
+            </div>
+            <div class="col-10">
+              <p class="text-muted">
+              The product is authentic, delivered in 4 days. I downloaded the warranty from the Esquire website. The seller was very helpful and cooperative. I've used the machine twice till now. Functioning very nicely. 👍 for the seller.
+              </p>
+              <h4>Khudista Mahjabeen</h4>
+              <small class="fs-6 text-muted">Customer</small>
+            </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-evenly">
+            <div class="col-2 text-center">
+              <i class="bi bi-quote"></i>
+            </div>
+            <div class="col-10">
+              <p class="text-muted">
+              Heriken is cool! I have ordered hundreds of products from it and never got any scam.
+              </p>
+              <h4>Iliyas</h4>
+              <small class="fs-6 text-muted">User</small>
+            </div>
+            </div>
+          </div>
+          </div>
+          <button
+          class="nextprev-btn rounded-pill prev-btn"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+          >
+          <i class="bi bi-arrow-left-circle-fill prev"></i>
+          <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+          class="nextprev-btn rounded-pill next-btn"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+          >
+          <i class="bi bi-arrow-right-circle-fill next"></i>
+          <span class="visually-hidden">Next</span>
+          </button>
         </div>
+        </div>
+      </div>
       </div>
     </section>
     <!-- testimonial ends here -->
@@ -451,55 +456,55 @@
     <!-- blog section starts -->
     <section class="blog mt-5 pb-5" id="blog">
       <div class="heading text-center pt-5">
-        <small>Latest News</small>
-        <h3>Volunteering & Certification</h3>
+      <small>Latest News</small>
+      <h3>Volunteering & Certification</h3>
       </div>
       <div class="row justify-content-evenly px-4 mt-4 align-items-stretch" data-aos="fade-up">
-        <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
-            <div class="card h-100 d-flex flex-column">
-                <img src="images/huawei.jpg" class="card-img-top rounded-4" alt="..." style="object-fit: cover; height: 200px;">
-                <div class="card-body px-4 d-flex flex-column">
-                    <small>By HUAWEI</small><span class="ms-3">Feb 8, 2022</span>
-                    <h4 class="card-title">
-                        <a href="https://www.linkedin.com/posts/abdun-noor-shihab_activity-6876089483918495744-N9uM?utm_source=share&utm_medium=member_desktop&rcm=ACoAACwSraQBKdU56ntJ4_0ifbT67s1FsD7-mAg">The Future of Mobile App Industry</a>
-                    </h4>
-                    <p class="text-muted flex-grow-1">
-                        I have finished Huawei's training session on the future of the mobile app industry...
-                    </p>
-                    <a href="https://www.linkedin.com/posts/abdun-noor-shihab_activity-6876089483918495744-N9uM?utm_source=share&utm_medium=member_desktop&rcm=ACoAACwSraQBKdU56ntJ4_0ifbT67s1FsD7-mAg" class="mt-auto">Read More</a>
-                </div>
-            </div>
+      <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
+        <div class="card h-100 d-flex flex-column">
+          <img src="images/huawei.jpg" class="card-img-top rounded-4" alt="..." style="object-fit: cover; height: 200px;">
+          <div class="card-body px-4 d-flex flex-column">
+            <small>By HUAWEI</small><span class="ms-3">Feb 8, 2022</span>
+            <h4 class="card-title">
+              <a href="https://www.linkedin.com/posts/abdun-noor-shihab_activity-6876089483918495744-N9uM?utm_source=share&utm_medium=member_desktop&rcm=ACoAACwSraQBKdU56ntJ4_0ifbT67s1FsD7-mAg">The Future of Mobile App Industry</a>
+            </h4>
+            <p class="text-muted flex-grow-1">
+              I have finished Huawei's training session on the future of the mobile app industry...
+            </p>
+            <a href="https://www.linkedin.com/posts/abdun-noor-shihab_activity-6876089483918495744-N9uM?utm_source=share&utm_medium=member_desktop&rcm=ACoAACwSraQBKdU56ntJ4_0ifbT67s1FsD7-mAg" class="mt-auto">Read More</a>
+          </div>
         </div>
-        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
-            <div class="card h-100 d-flex flex-column">
-                <img src="images/iub.jpg" class="card-img-top rounded-4" alt="..." style="object-fit: cover; height: 200px;">
-                <div class="card-body px-4 d-flex flex-column">
-                    <small>By IUB</small><span class="ms-3">Mar 8, 2023</span>
-                    <h4 class="card-title">
-                        <a href="https://www.linkedin.com/posts/abdun-noor-shihab_i-successfully-contributed-as-a-volunteer-activity-7253651554832916480-oD4K">Volunteering at 24th convocation</a>
-                    </h4>
-                    <p class="text-muted flex-grow-1">
-                        I successfully completed my volunteering duties for the 24th convocation...
-                    </p>
-                    <a href="https://www.linkedin.com/posts/abdun-noor-shihab_i-successfully-contributed-as-a-volunteer-activity-7253651554832916480-oD4K" class="mt-auto">Read More</a>
-                </div>
-            </div>
+      </div>
+      <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
+        <div class="card h-100 d-flex flex-column">
+          <img src="images/iub.jpg" class="card-img-top rounded-4" alt="..." style="object-fit: cover; height: 200px;">
+          <div class="card-body px-4 d-flex flex-column">
+            <small>By IUB</small><span class="ms-3">Mar 8, 2023</span>
+            <h4 class="card-title">
+              <a href="https://www.linkedin.com/posts/abdun-noor-shihab_i-successfully-contributed-as-a-volunteer-activity-7253651554832916480-oD4K">Volunteering at 24th convocation</a>
+            </h4>
+            <p class="text-muted flex-grow-1">
+              I successfully completed my volunteering duties for the 24th convocation...
+            </p>
+            <a href="https://www.linkedin.com/posts/abdun-noor-shihab_i-successfully-contributed-as-a-volunteer-activity-7253651554832916480-oD4K" class="mt-auto">Read More</a>
+          </div>
         </div>
-        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
-            <div class="card h-100 d-flex flex-column">
-                <img src="images/udemi.jpg" class="card-img-top rounded-4" alt="..." style="object-fit: cover; height: 200px;">
-                <div class="card-body px-4 d-flex flex-column">
-                    <small>By Udemy</small><span class="ms-3">Dec 8, 2021</span>
-                    <h4 class="card-title">
-                        <a href="https://www.linkedin.com/posts/abdun-noor-shihab_udemycourse-activity-6692161256645890048-sE9m">Web Design and Development</a>
-                    </h4>
-                    <p class="text-muted flex-grow-1">
-                        During Corona, I successfully completed web development courses on Udemy...
-                    </p>
-                    <a href="https://www.linkedin.com/posts/abdun-noor-shihab_udemycourse-activity-6692161256645890048-sE9m" class="mt-auto">Read More</a>
-                </div>
-            </div>
+      </div>
+      <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
+        <div class="card h-100 d-flex flex-column">
+          <img src="images/udemi.jpg" class="card-img-top rounded-4" alt="..." style="object-fit: cover; height: 200px;">
+          <div class="card-body px-4 d-flex flex-column">
+            <small>By Udemy</small><span class="ms-3">Dec 8, 2021</span>
+            <h4 class="card-title">
+              <a href="https://www.linkedin.com/posts/abdun-noor-shihab_udemycourse-activity-6692161256645890048-sE9m">Web Design and Development</a>
+            </h4>
+            <p class="text-muted flex-grow-1">
+              During Corona, I successfully completed web development courses on Udemy...
+            </p>
+            <a href="https://www.linkedin.com/posts/abdun-noor-shihab_udemycourse-activity-6692161256645890048-sE9m" class="mt-auto">Read More</a>
+          </div>
         </div>
+      </div>
     </div>
     
     </section>
@@ -508,56 +513,56 @@
     <!-- contact section starts -->
     <section class="contact" id="contact">
       <div class="container">
-          <small>Get in Touch</small>
-          <h3>Any Questions? Feel Free to Contact</h3>
-  
-          <div class="contact-content">
-              <!-- Contact Details -->
-              <div class="contact-box">
-                  <div class="contact-item">
-                      <i class="bi bi-geo-alt-fill"></i>
-                      <p>272/4, Swapnonir, South Manikdi, Dhaka 1206</p>
-                  </div>
-                  <div class="contact-item">
-                      <i class="bi bi-telephone-fill"></i>
-                      <p>+880 1831005011</p>
-                  </div>
-                  <div class="contact-item">
-                      <i class="bi bi-envelope-fill"></i>
-                      <p>abdunnoorshihab@gmail.com</p>
-                  </div>
-              </div>
-  
-              <!-- Social Media Icons -->
-              <div class="social-icons">
-                  <a href="https://www.facebook.com/abdunnoorshihab/" class="facebook"><i class="bi bi-facebook"></i></a>
-                  <a href="https://www.linkedin.com/in/abdun-noor-shihab/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-                  <a href="https://wa.me/+8801831005011" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
-                  <a href="https://www.instagram.com/noor._.shihab/" class="instagram"><i class="bi bi-instagram"></i></a>
-              </div>
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+    
+        <div class="contact-content">
+          <!-- Contact Details -->
+          <div class="contact-box">
+            <div class="contact-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <p>272/4, Swapnonir, South Manikdi, Dhaka 1206</p>
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-telephone-fill"></i>
+              <p>+880 1831005011</p>
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-envelope-fill"></i>
+              <p>abdunnoorshihab@gmail.com</p>
+            </div>
           </div>
+    
+          <!-- Social Media Icons -->
+          <div class="social-icons">
+            <a href="https://www.facebook.com/abdunnoorshihab/" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/abdun-noor-shihab/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="https://wa.me/+8801831005011" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.instagram.com/noor._.shihab/" class="instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
       </div>
-  </section>
-  
+    </section>
+    
     <!-- footer section starts  -->
     <footer class="text-center text-muted py-4">
       <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
       <div class="link-group mt-5" data-aos="fade-up">
-        <a href="#home">Home</a>
-        <div class="vr"></div>
-        <a href="#about">About</a>
-        <div class="vr"></div>
-        <a href="#service">Service</a>
-        <div class="vr"></div>
-        <a href="#portfolio">Portfolio</a>
-        <div class="vr"></div>
-        <a href="#blog">Blog</a>
-        <div class="vr"></div>
-        <a href="#contact">Contact</a>
+      <a href="#home">Home</a>
+      <div class="vr"></div>
+      <a href="#about">About</a>
+      <div class="vr"></div>
+      <a href="#service">Service</a>
+      <div class="vr"></div>
+      <a href="#portfolio">Portfolio</a>
+      <div class="vr"></div>
+      <a href="#blog">Blog</a>
+      <div class="vr"></div>
+      <a href="#contact">Contact</a>
       </div>
       <hr class="text-muted my-4" />
 
-      <p>Copyright 2025 Abdun Noor Shihab | All Rights Reserved.</p>
+      <p>Copyright <span id="currentYear"></span> Abdun Noor Shihab | All Rights Reserved.</p>
     </footer>
     <!-- footer section ends here -->
 
@@ -565,32 +570,32 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
 
     <!-- AOS library javascript link  -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       // initializing AOS library
       AOS.init({
-        duration: 1000,
-        offset: 50,
+      duration: 1000,
+      offset: 50,
       });
     </script>
     <script>
       document.getElementById("seeMoreBtn").addEventListener("click", function() {
-          const textContainer = document.querySelector(".text-container");
-          textContainer.classList.toggle("expanded");
-  
-          if (textContainer.classList.contains("expanded")) {
-              this.textContent = "See Less";
-          } else {
-              this.textContent = "See More";
-          }
+        const textContainer = document.querySelector(".text-container");
+        textContainer.classList.toggle("expanded");
+    
+        if (textContainer.classList.contains("expanded")) {
+          this.textContent = "See Less";
+        } else {
+          this.textContent = "See More";
+        }
       });
-  </script>
+    </script>
+    <script>
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
     <!-- custom js file linking -->
     <script src="js/script.js"></script>
-    
-  </body>
-</html>

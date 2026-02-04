@@ -1,6 +1,6 @@
 /* DARK MODE */
 document.getElementById("darkToggle").onclick = () => {
-  document.body.classList.toggle("dark");
+  //document.body.classList.toggle("dark");
 };
 
 /* FILTER */

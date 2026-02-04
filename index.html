@@ -1,601 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdun Noor Shihab | Portfolio</title>
 
-    <!-- bootstrap css cdn link  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- custom css file -->
-    <link rel="stylesheet" href="css/style.css" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
 
-    <!-- bootstrap icon cdn link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <!-- jquery cdn link  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  </head>
-  <body>
-    <!-- navbar starts -->
-    <nav
-      id="navbar-top"
-      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
-    >
-      <div class="container-fluid px-5">
-        <a class="navbar-brand fw-bold fs-2 brand-color" href="#"
-          >Portfolio</a
-        >
-        <button
-          class="nav-menu d-md-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <i class="bi bi-menu-button-fill"></i>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#service">Service</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonial">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#blog">Blog</a>
-            </li>
-          </ul>
-        </div>
-        <a class="nav-link" href="#contact"><button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button></a>
-      </div>
-    </nav>
-    <!-- navbar ends here -->
+<body>
 
-    <!-- home section starts  -->
-    <section class="home pt-5 pb-5" id="home">
-      <div class="row justify-content-evenly align-middle">
-        <!-- here data-aos is used for adding aos animation  -->
-        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
-          <h2 style="color: #3f396d">
-            Hello! I Am <br /><span class="c-orange">Abdun Noor Shihab</span>
-          </h2>
-          <p class="text-muted">
-            I am a recent graduate who has been practicing web development and IT support for one year. My expertise is in IT assistantship, and I have experience in the creation of completely responsive websites that include the backend.
-          </p>
-          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-            <a class="nav-link" href="#contact">Hire Me</a>
-          </button>
-        </div>
-        <div class="col-10 col-md-4 d-none d-md-block">
-          <img src="images/opyIMG_1379-removebg.PNG" class="img-fluid" alt="Placeholder Image" />
-        </div>
-      </div>
-    </section>
-    <!-- home section ends here -->
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top glass-nav">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Shihab</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="bi bi-list"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav gap-4">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#service">Services</a></li>
+        <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <!-- expertise section starts -->
-    <section class="expertise mx-5 mt-5" id="service">
-      <div class="heading text-center">
-        <small>My Expertise</small>
-        <h3>
-          Provide Wide Range of <br />
-          Digital Services
-        </h3>
-      </div>
-      <div class="row justify-content-evenly mt-5">
-        <div class="col-10 col-md-4" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img">
-              <img
-                src="images/service-icon1.png"
-                class="w-25 img-fluid img"
-                alt=""
-              />
-            </div>
-            <div class="content mt-3">
-              <h4>Web Development</h4>
-              <p class="text-muted">
-                I've been doing web design for eight months. I have helped with the front-end development of a few projects that are currently accessible on the local website. For example, I have worked on projects like <a href="https://www.heriken.com/">Hariken</a> and <a href="https://ordhekdeen.com/">Ordekdeen</a>.
-              </p>
-             
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-10" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img">
-              <img
-                src="images/service-icon2.png"
-                class="w-25 img-fluid img"
-                alt=""
-              />
-            </div>
-            <div class="content mt-3">
-              <h4>Software Quality Assurance</h4>
-              <p class="text-muted">
-                As a quality assurance engineer, I have participated in several initiatives, including: <a href="https://esquireelectronicsltd.com/">Esquare Electronics</a>, <a href="https://healthynikah.com/">Healthy Nikah</a> & many more. I have experience in manual testing, automation testing, and performance testing.
-              </p>
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-10" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img">
-              <img
-                src="images/service-icon3.png"
-                class="w-25 img-fluid img"
-                alt=""
-              />
-            </div>
-            <div class="content mt-3">
-              <h4>IT Specialist</h4>
-              <p class="text-muted">
-                Currently I am working on <a href="https://www.swisscontact.org/en/countries/bangladesh">Swisscontact</a> as an IT Intern. I have experience in IT support, network management, and server management. I have experience in managing the Server, Network, and IT support.
-              </p>
-              
-            </div>
-          </div>
+<!-- HERO -->
+<section id="home" class="hero-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6" data-aos="fade-right">
+        <h1>Hi, I’m <span>Abdun Noor Shihab</span></h1>
+        <p>IT Specialist & Frontend Developer building modern, scalable digital experiences.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-primary">Hire Me</a>
+          <a href="Cv-December-2024.pdf" download class="btn-outline">Download CV</a>
         </div>
       </div>
-    </section>
-    <!-- expertise section ends here -->
+      <div class="col-md-6 text-center" data-aos="fade-left">
+        <img src="images/opyIMG_1379-removebg.PNG" class="hero-img">
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- skill section starts -->
-    <section class="skill mt-5 py-5" id="about">
-      <div class="row justify-content-evenly">
-        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
-          <div class="row justify-content-evenly">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress html-css">
-                  <span class="progress-value html-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">HTML & CSS</span>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress javascript">
-                  <span class="progress-value javascript-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">JavaScript</span>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-evenly mt-4">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress php">
-                  <span class="progress-value php-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">PHP</span>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3  ms-md-0">
-                <div class="circular-progress reactjs">
-                  <span class="progress-value reactjs-progress">0%</span>
-                </div>
-                <br>
-                <span class="text">ReactJS</span>
-              </div>
-            </div>
-          </div>
+<!-- SERVICES -->
+<section id="service" class="section">
+  <div class="container">
+    <h2 class="section-title">What I Do</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="service-card">
+          <i class="bi bi-code-slash"></i>
+          <h4>Web Development</h4>
+          <p>Responsive websites & frontend systems using modern frameworks.</p>
         </div>
-        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
-            <div class="heading mt-5 mt-md-3">
-                <small class="text-gray-500 text-sm">My Skills</small>
-                <h3 class="text-2xl md:text-3xl font-semibold text-gray-800">Beautiful & Unique Digital Experiences</h3>
-                
-                <div class="text-container mt-6">
-                    <p id="textContent" class="text-gray-600 text-sm md:text-base leading-relaxed">
-                      <ul class="list-disc list-inside space-y-2 mt-4 text-gray-600">
-                        <li>I am currently serving as an IT Intern at Swisscontact, where I contribute to the development of the SCBD portal. My responsibilities include both front-end and back-end development, utilizing technologies such as HTML, PHP, and Laravel. Additionally, I am involved in the management and updating of the IT vendor database.</li>
-                        <br>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card">
+          <i class="bi bi-bug"></i>
+          <h4>Software QA</h4>
+          <p>Manual & automation testing ensuring quality and performance.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card">
+          <i class="bi bi-pc-display"></i>
+          <h4>IT Support</h4>
+          <p>Network, server & system support in enterprise environments.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-                        Prior to this role, I held the position of Junior Software Engineer at SoftLab IT, where I gained valuable experience in software development and technical project execution.
-                    </ul>
-                        My experience includes:
-                        <ul class="list-disc list-inside space-y-2 mt-4 text-gray-600">
-                            <li>Developing a <span class="font-semibold text-blue-600">React-based medicine delivery app</span> (Get Well Soon).</li>
-                            <li>Creating a <span class="font-semibold text-blue-600">staff data web app</span> using MySQL, Tailwind CSS, and AJAX.</li>
-                            <li>Designing and developing a <span class="font-semibold text-blue-600">camp management system</span> (UI, frontend, documentation).</li>
-                            <li>Implementing <span class="font-semibold text-blue-600">responsive designs</span>, navigation menus, and skeleton loaders in React, Angular, and Tailwind.</li>
-                            <li>Building a <span class="font-semibold text-blue-600">finance-related UI project</span> inspired by LankaBangla Financial Portal.</li>
-                        </ul>
-                        <br>
-                        I have a strong focus on <span class="font-semibold text-blue-600">front-end development</span>, with additional experience in <span class="font-semibold text-blue-600">MongoDB and MySQL</span> for backend work.
-                    </p>
-                </div>
-                
-                <div class="bt mt-6">
-                  <button id="seeMoreBtn" class="text-black 
-                  font-semibold shadow-md hover:bg-blue-600 transition duration-300 flex justify-center items-center w-full">
-                  See More
-                   </button>
-                
-                    <button class="c-btn mt-3 py-2 px-4 rounded-pill">
-                        <a href="Cv- December-2024.pdf" download="Cv-December-2024" class="text-white no-underline">Download CV</a>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-      </div>
-    </section>
-    <section class="portfolio" id="portfolio">
-      <div class="heading text-center pt-5">
-        <small>Creative Work</small>
-        <h3>Check My Portfolio</h3>
-      </div>
-
-      <div id="myBtnContainer" class="text-center mt-4">
-        <!-- here we will create custom attribute using data- for filtering -->
-        <button class="filter-item" data-filter="all">All</button>
-        <button class="filter-item" data-filter="game">Game</button>
-        <button class="filter-item" data-filter="webapp">Web App</button>
-        <button class="filter-item" data-filter="website">Website</button>
-        <button class="filter-item" data-filter="brand">Brand</button>
-      </div>
-      <div class="portfolio-body">
-        <div class="row justify-content-evenly px-4">
-          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/chess_game.gif" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">Chess Game</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="bg-secondary badge-pill mb-2">Game</span>
-                <span class="badge bg-secondary badge-pill mb-2">Game</span>
-                ><br />
-                <a href="https://github.com/abdunnoorshihab/Chess-Game" class="link">Read More</a>
-              </div>
-            </div>
-            
-          </div>
-          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img
-                src="images/brrf.gif"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body text-center">
-                <h4 class="card-title">Bangladesh railway Reservation System</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">Website</span
-                ><br />
-                <a href="https://github.com/abdunnoorshihab/Bangladesh-Railway-Reservation-System" class="read-more-btn link">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/healthynikah.jpg" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">Healthy Nikah</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">WebApp</span
-                ><br />
-                <a href="https://github.com/abdunnoorshihab/Healthy-Nika-App-clone" class="read-more-btn link">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-evenly mt-4 px-4">
-          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/calculator.gif" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">Calculator</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">App</span
-                ><br />
-                <a href="https://abdunnoorshihab.github.io/Calculator/" class="read-more-btn link">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/spotify.gif" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">Spotify Clone</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">Game</span
-                ><br />
-                <a href="https://abdunnoorshihab.github.io/Spotify-Clone/" class="read-more-btn link">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img
-                src="images/unclickable button.gif"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body text-center">
-                <h4 class="card-title">Unclickable Button</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">Web App</span>
-                ><br />
-                <a href="https://github.com/abdunnoorshihab/Unclickable-Button-project" class="read-more-btn link">Read More</a>
-              </div>
-            </div>
+<!-- PORTFOLIO -->
+<section id="portfolio" class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="images/chess_game.gif">
+          <div class="project-info">
+            <h5>Chess Game</h5>
+            <a href="https://github.com/abdunnoorshihab/Chess-Game">View Project</a>
           </div>
         </div>
       </div>
-    </section>
-    <section class="testimonial mt-5 pt-5" id="testimonial">
-      <div class="row justify-content-evenly">
-      <div class="col-md-4 col-10" data-aos="slide-right">
-        <img src="images/tastimonials-img.png" class="img-fluid" alt="" />
-      </div>
-      <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
-        <div class="heading">
-        <small>Testimonials</small>
-        <h3>Happy Clients Feedback</h3>
-        <!-- here we will use carousel element from bootstrap -->
-        <div
-          id="carouselExampleControls"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row justify-content-evenly">
-            <div class="col-2 text-center">
-              <i class="bi bi-quote"></i>
-            </div>
-            <div class="col-10">
-              <p class="text-muted">
-              Always satisfied from Esquire purchases, they never disappoint me. And sharp rice cooker is one of best purchase from their online portal.
-              </p>
-              <h4>Talamoon Nisha</h4>
-              <small class="fs-6 text-muted">Happy Client</small>
-            </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row justify-content-evenly">
-            <div class="col-2 text-center">
-              <i class="bi bi-quote"></i>
-            </div>
-            <div class="col-10">
-              <p class="text-muted">
-              The product is authentic, delivered in 4 days. I downloaded the warranty from the Esquire website. The seller was very helpful and cooperative. I've used the machine twice till now. Functioning very nicely. 👍 for the seller.
-              </p>
-              <h4>Khudista Mahjabeen</h4>
-              <small class="fs-6 text-muted">Customer</small>
-            </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row justify-content-evenly">
-            <div class="col-2 text-center">
-              <i class="bi bi-quote"></i>
-            </div>
-            <div class="col-10">
-              <p class="text-muted">
-              Heriken is cool! I have ordered hundreds of products from it and never got any scam.
-              </p>
-              <h4>Iliyas</h4>
-              <small class="fs-6 text-muted">User</small>
-            </div>
-            </div>
-          </div>
-          </div>
-          <button
-          class="nextprev-btn rounded-pill prev-btn"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev"
-          >
-          <i class="bi bi-arrow-left-circle-fill prev"></i>
-          <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-          class="nextprev-btn rounded-pill next-btn"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="next"
-          >
-          <i class="bi bi-arrow-right-circle-fill next"></i>
-          <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        </div>
-      </div>
-      </div>
-    </section>
-    <!-- testimonial ends here -->
-
-    <!-- blog section starts -->
-    <section class="blog mt-5 pb-5" id="blog">
-      <div class="heading text-center pt-5">
-      <small>Latest News</small>
-      <h3>Volunteering & Certification</h3>
-      </div>
-      <div class="row justify-content-evenly px-4 mt-4 align-items-stretch" data-aos="fade-up">
-      <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
-        <div class="card h-100 d-flex flex-column">
-          <img src="images/huawei.jpg" class="card-img-top rounded-4" alt="..." style="object-fit: cover; height: 200px;">
-          <div class="card-body px-4 d-flex flex-column">
-            <small>By HUAWEI</small><span class="ms-3">Feb 8, 2022</span>
-            <h4 class="card-title">
-              <a href="https://www.linkedin.com/posts/abdun-noor-shihab_activity-6876089483918495744-N9uM?utm_source=share&utm_medium=member_desktop&rcm=ACoAACwSraQBKdU56ntJ4_0ifbT67s1FsD7-mAg">The Future of Mobile App Industry</a>
-            </h4>
-            <p class="text-muted flex-grow-1">
-              I have finished Huawei's training session on the future of the mobile app industry...
-            </p>
-            <a href="https://www.linkedin.com/posts/abdun-noor-shihab_activity-6876089483918495744-N9uM?utm_source=share&utm_medium=member_desktop&rcm=ACoAACwSraQBKdU56ntJ4_0ifbT67s1FsD7-mAg" class="mt-auto">Read More</a>
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="images/spotify.gif">
+          <div class="project-info">
+            <h5>Spotify Clone</h5>
+            <a href="#">View Project</a>
           </div>
         </div>
       </div>
-      <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
-        <div class="card h-100 d-flex flex-column">
-          <img src="images/iub.jpg" class="card-img-top rounded-4" alt="..." style="object-fit: cover; height: 200px;">
-          <div class="card-body px-4 d-flex flex-column">
-            <small>By IUB</small><span class="ms-3">Mar 8, 2023</span>
-            <h4 class="card-title">
-              <a href="https://www.linkedin.com/posts/abdun-noor-shihab_i-successfully-contributed-as-a-volunteer-activity-7253651554832916480-oD4K">Volunteering at 24th convocation</a>
-            </h4>
-            <p class="text-muted flex-grow-1">
-              I successfully completed my volunteering duties for the 24th convocation...
-            </p>
-            <a href="https://www.linkedin.com/posts/abdun-noor-shihab_i-successfully-contributed-as-a-volunteer-activity-7253651554832916480-oD4K" class="mt-auto">Read More</a>
-          </div>
-        </div>
-      </div>
-      <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
-        <div class="card h-100 d-flex flex-column">
-          <img src="images/udemi.jpg" class="card-img-top rounded-4" alt="..." style="object-fit: cover; height: 200px;">
-          <div class="card-body px-4 d-flex flex-column">
-            <small>By Udemy</small><span class="ms-3">Dec 8, 2021</span>
-            <h4 class="card-title">
-              <a href="https://www.linkedin.com/posts/abdun-noor-shihab_udemycourse-activity-6692161256645890048-sE9m">Web Design and Development</a>
-            </h4>
-            <p class="text-muted flex-grow-1">
-              During Corona, I successfully completed web development courses on Udemy...
-            </p>
-            <a href="https://www.linkedin.com/posts/abdun-noor-shihab_udemycourse-activity-6692161256645890048-sE9m" class="mt-auto">Read More</a>
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="images/healthynikah.jpg">
+          <div class="project-info">
+            <h5>Healthy Nikah</h5>
+            <a href="#">View Project</a>
           </div>
         </div>
       </div>
     </div>
-    
-    </section>
-    <!-- blog section ends here -->
+  </div>
+</section>
 
-    <!-- contact section starts -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <small>Get in Touch</small>
-        <h3>Any Questions? Feel Free to Contact</h3>
-    
-        <div class="contact-content">
-          <!-- Contact Details -->
-          <div class="contact-box">
-            <div class="contact-item">
-              <i class="bi bi-geo-alt-fill"></i>
-              <p>272/4, Swapnonir, South Manikdi, Dhaka 1206</p>
-            </div>
-            <div class="contact-item">
-              <i class="bi bi-telephone-fill"></i>
-              <p>+880 1831005011</p>
-            </div>
-            <div class="contact-item">
-              <i class="bi bi-envelope-fill"></i>
-              <p>abdunnoorshihab@gmail.com</p>
-            </div>
-          </div>
-    
-          <!-- Social Media Icons -->
-          <div class="social-icons">
-            <a href="https://www.facebook.com/abdunnoorshihab/" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/abdun-noor-shihab/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            <a href="https://wa.me/+8801831005011" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
-            <a href="https://www.instagram.com/noor._.shihab/" class="instagram"><i class="bi bi-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- footer section starts  -->
-    <footer class="text-center text-muted py-4">
-      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
-      <div class="link-group mt-5" data-aos="fade-up">
-      <a href="#home">Home</a>
-      <div class="vr"></div>
-      <a href="#about">About</a>
-      <div class="vr"></div>
-      <a href="#service">Service</a>
-      <div class="vr"></div>
-      <a href="#portfolio">Portfolio</a>
-      <div class="vr"></div>
-      <a href="#blog">Blog</a>
-      <div class="vr"></div>
-      <a href="#contact">Contact</a>
-      </div>
-      <hr class="text-muted my-4" />
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container text-center">
+    <h2 class="section-title">Let’s Work Together</h2>
+    <p>Email: <b>abdunnoorshihab@gmail.com</b></p>
+    <div class="socials">
+      <a href="#"><i class="bi bi-linkedin"></i></a>
+      <a href="#"><i class="bi bi-github"></i></a>
+      <a href="#"><i class="bi bi-facebook"></i></a>
+    </div>
+  </div>
+</section>
 
-      <p>Copyright <span id="currentYear"></span> Abdun Noor Shihab | All Rights Reserved.</p>
-    </footer>
-    <!-- footer section ends here -->
+<footer>
+  <p>© <span id="year"></span> Abdun Noor Shihab</p>
+</footer>
 
-      <!-- bootstrap javascript cdn link  -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous">
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="js/script.js"></script>
 
-    <!-- AOS library javascript link  -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      // initializing AOS library
-      AOS.init({
-      duration: 1000,
-      offset: 50,
-      });
-    </script>
-    <script>
-      document.getElementById("seeMoreBtn").addEventListener("click", function() {
-        const textContainer = document.querySelector(".text-container");
-        textContainer.classList.toggle("expanded");
-    
-        if (textContainer.classList.contains("expanded")) {
-          this.textContent = "See Less";
-        } else {
-          this.textContent = "See More";
-        }
-      });
-    </script>
-    <script>
-      document.getElementById('currentYear').textContent = new Date().getFullYear();
-    </script>
-    <!-- custom js file linking -->
-    <script src="js/script.js"></script>
+</body>
+</html>

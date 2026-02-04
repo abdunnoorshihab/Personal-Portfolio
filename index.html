@@ -1,91 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <h1 class="logo">MyPortfolio</h1>
+<!-- NAVBAR -->
+<header class="navbar">
+  <h1 class="logo">MyPortfolio</h1>
+
+  <div class="nav-right">
+    <button id="darkToggle">🌙</button>
     <nav>
       <a href="#home">Home</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <!-- HERO -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h2>Hello, I'm <span>Abdun Noor Shihab</span></h2>
-      <p>Web Developer | Designer | Tech Enthusiast</p>
-      <a href="#projects" class="btn">View Projects</a>
+<!-- HERO -->
+<section id="home" class="hero reveal">
+  <h2>Hello, I'm <span>Abdun Noor Shihab</span></h2>
+  <p>Web Developer | UI Designer | Data-Driven Market Research</p>
+  <a href="#projects" class="btn">View Work</a>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+  <h2 class="section-title reveal">My Projects</h2>
+
+  <!-- FILTER BUTTONS -->
+  <div class="filters reveal">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="web">Web</button>
+    <button data-filter="ui">UI</button>
+    <button data-filter="app">App</button>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- PROJECT CARD -->
+    <div class="project-card web reveal">
+      <div class="project-image">
+        <img src="images/project1.jpg" loading="lazy" alt="Project 1">
+      </div>
+      <div class="project-content">
+        <h3>Portfolio Website</h3>
+        <p>Personal portfolio website.</p>
+        <button class="project-btn" onclick="openModal('Portfolio Website','Modern personal portfolio.')">
+          Preview
+        </button>
+      </div>
     </div>
-  </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="projects">
-    <h2 class="section-title">My Projects</h2>
-
-    <div class="projects-grid">
-
-      <!-- Project 1 -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="images/project1.jpg" alt="Project 1">
-        </div>
-        <div class="project-content">
-          <h3>Portfolio Website</h3>
-          <p>Personal portfolio using HTML, CSS & JS.</p>
-          <a href="#" class="project-btn">View</a>
-        </div>
+    <div class="project-card ui reveal">
+      <div class="project-image">
+        <img src="images/project2.jpg" loading="lazy" alt="Project 2">
       </div>
-
-      <!-- Project 2 -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="images/project2.jpg" alt="Project 2">
-        </div>
-        <div class="project-content">
-          <h3>E-commerce UI</h3>
-          <p>Modern e-commerce front-end design.</p>
-          <a href="#" class="project-btn">View</a>
-        </div>
+      <div class="project-content">
+        <h3>UI Dashboard</h3>
+        <p>Clean admin dashboard UI.</p>
+        <button class="project-btn" onclick="openModal('UI Dashboard','Admin UI design.')">
+          Preview
+        </button>
       </div>
-
-      <!-- Project 3 -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="images/project3.jpg" alt="Project 3">
-        </div>
-        <div class="project-content">
-          <h3>Dashboard App</h3>
-          <p>Admin dashboard with charts.</p>
-          <a href="#" class="project-btn">View</a>
-        </div>
-      </div>
-
-      <!-- Add MORE projects the same way -->
-      
     </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <h2 class="section-title">Contact Me</h2>
-    <p>Email: abdunnoorshihab@gmail.com</p>
-  </section>
+    <div class="project-card app reveal">
+      <div class="project-image">
+        <img src="images/project3.jpg" loading="lazy" alt="Project 3">
+      </div>
+      <div class="project-content">
+        <h3>Mobile App</h3>
+        <p>Cross-platform app UI.</p>
+        <button class="project-btn" onclick="openModal('Mobile App','Mobile application design.')">
+          Preview
+        </button>
+      </div>
+    </div>
 
-  <!-- JS -->
-  <script src="script.js"></script>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">×</span>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact" class="contact reveal">
+  <h2>Contact Me</h2>
+  <p>Email: abdunnoorshihab@gmail.com</p>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
